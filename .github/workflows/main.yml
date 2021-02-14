@@ -1,22 +1,18 @@
-name: deploy_to_firebase_hosting
-
-on:
+name: Deploy to Firebase Hosting on merge
+'on':
   push:
-    tags:
-      - release-production-*
-
+    branches:
+      - main
 jobs:
-  deploy_to_firebase_hosting:
-
+  build_and_deploy:
     runs-on: ubuntu-latest
-    
     steps:
-      - name: Checkout the repository
-        uses: actions/checkout@master
-      
-      - name: Deploy to Firebase
-        uses: w9jds/firebase-action@master
+      - uses: actions/checkout@v2
+      - uses: FirebaseExtended/action-hosting-deploy@v0
         with:
-          args: deploy --only hosting
+          repoToken: '${{ secrets.GITHUB_TOKEN }}'
+          firebaseServiceAccount: '${{ secrets.TOKEN }}'
+          channelId: live
+          projectId: theoneclassroom
         env:
-          FIREBASE_TOKEN: ${{ secrets.TOKEN }}
+          FIREBASE_CLI_PREVIEWS: hostingchannels
