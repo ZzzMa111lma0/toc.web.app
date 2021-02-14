@@ -11,7 +11,7 @@ jobs:
       - uses: FirebaseExtended/action-hosting-deploy@v0
         with:
           repoToken: '${{ secrets.GITHUB_TOKEN }}'
-          firebaseServiceAccount: '${{ secrets.TOKEN }}'
+          firebaseServiceAccount: '${{ secrets.KEY }}'
           channelId: live
           projectId: theoneclassroom
         env:
