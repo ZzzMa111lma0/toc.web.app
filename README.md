@@ -1,7 +1,10 @@
 # toc-prunusoide.web.app
 If you want to create profile, Edit <a href="./skill.html">here</a>
-1.Upload Your Image in to Image/
-2.Edit skilll.html
+0.Fork Repo<br/>
+1.Upload Your Image in to Image/<br/>
+2.Edit skilll.html<br/>
+3.Pull request or merge if ya can<br/>
+4.Delet ur acc<br/>
 
 ```html
   <div class="hi">
