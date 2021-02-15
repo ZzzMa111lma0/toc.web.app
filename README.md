@@ -15,4 +15,8 @@ If you want to create profile, Edit <a href="./skill.html">here</a><br/>
     </div>
 ```
 
+# Later plans
+Firebase can't host and run .php code
+So in future, I will change to others hoster
+
 ©Prunusoide Organization
